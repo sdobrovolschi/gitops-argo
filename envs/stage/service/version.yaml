@@ -1,0 +1,3 @@
+image:
+  repository: "ghcr.io/sdobrovolschi/containers/service"
+  tag: 5f09e94

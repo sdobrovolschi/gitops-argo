@@ -1,0 +1,22 @@
+name: ci
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    environment: preview
+    steps:
+      - name: Wait commit status
+        uses: cloudposse/github-action-wait-commit-status@0.2.0
+        with:
+          repository: sdobrovolschi/gitops-argo
+          sha: ${{ github.sha }}
+          status: continuous-delivery/preview-${{ github.head_ref }}
+          expected_state: "success"
+          check-timeout: 300 # 5 min
+          check-retry-count: 30
+          check-retry-interval: 20

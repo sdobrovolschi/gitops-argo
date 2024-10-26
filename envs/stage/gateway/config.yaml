@@ -1,0 +1,7 @@
+clusterName: in-cluster
+namespace: stage
+chart:
+  repository: ghcr.io/sdobrovolschi/helm-charts
+  name: service
+  version: 0.0.1
+appName: gateway

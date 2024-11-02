@@ -1,0 +1,7 @@
+clusterName: in-cluster
+namespace: prod
+chart:
+  repository: registry-1.docker.io/bitnamicharts
+  name: postgresql
+  version: 16.1.0
+appName: postgresql

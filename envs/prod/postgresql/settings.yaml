@@ -1,9 +1,2 @@
-global:
-  postgresql:
-    auth:
-      postgresPassword: 1234
-      username: admin
-      password: 1234
-      database: carts
-volumePermissions:
-  enabled: true
+postgresql:
+  database: carts

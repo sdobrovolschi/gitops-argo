@@ -1,7 +1,7 @@
 clusterName: in-cluster
 namespace: prod
 chart:
-  repository: registry-1.docker.io/bitnamicharts
+  repository: https://cetic.github.io/helm-charts
   name: postgresql
-  version: 13.4.0
+  version: 0.2.5
 appName: postgresql

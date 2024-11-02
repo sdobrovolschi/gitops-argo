@@ -42,7 +42,7 @@ container:
 ingress:
   enabled: true
   hosts:
-    - host: cart-service.local
+    - host: system.127.0.0.1.nip.io
       paths:
         - path: /
           pathType: Prefix
